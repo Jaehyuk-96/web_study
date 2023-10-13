@@ -1,0 +1,16 @@
+.grid-item{
+    color: white;
+    background-color: #ff5252;
+}
+
+.grid-item:nth-child(2n){
+    background-color: #bf5e5e;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    
+}
