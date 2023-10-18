@@ -68,3 +68,26 @@
 // console.log(a===b); 자료형
 // console.log(a==b); 값
 
+// const gugudan = function naming(){
+//     for(let i =1; i<=9; i++){
+//     console.log(`3*${i} = ${3*i}`);
+//     }
+//     };
+//     namming(); 함수호출
+
+const gugudan = () => {
+        for(let i =1; i<=9; i++){
+        console.log(`3*${i} = ${3*i}`);
+        }
+        };
+        gugudan(); 함수호출
+
+function gugugdan(dan){
+        for(let i =1; i<=9; i++){
+        console.log(`${dan}*${i} = ${dan*i}`);
+        }
+        }
+        gugudan(3);
+        gugudan(5);
+        namming(); 함수호출
+
