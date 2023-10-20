@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+    <script>
+      const el = document.getElementById("title");
+      console.log(el);
+      // getElementById로 가져오기
+
+      const classEl = document.getElementsByClassName("text");
+      console.log(classEl);
+
+      // getElementsByClassName로 가져오기
+
+      const classEls = document.getElementsByTagName("p"); //tag
+      console.log(classEls);
+      console.log(classEls[1]);
+
+      //tagname으로 가져오기
+
+      const csel = document.querySelector(".box-1");
+      //css 선택자를 전달받아 노드를 선택하는 메서드
+
+      (function init() {
+        console.log("initialized");
+      })(); //즉시실행
+
+      function init() {
+        console.log("initialized");
+      }
+
+      init(); //일반적인 실행
+
+      (function sum(a, b) {
+        console.log(a + b);
+      })(10, 20); //매개변수 추가
+    </script>
+  </body>
+</html>
